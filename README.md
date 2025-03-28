@@ -1,18 +1,18 @@
 # MNIST Digit Classifier
 This project implements a simple Convolutional Neural Network (CNN) in PyTorch to classify handwritten digits from the MNIST dataset. The model is trained and evaluated inside a GPU-enabled Docker container.
 
-## 🧠 Objective
+##  Objective
 
 The goal is to demonstrate image processing at scale by training a digit classification model on the MNIST dataset using GPU acceleration and managing input/output across container boundaries.
 
-## 🚀 Technologies Used
+##  Technologies Used
 
 - Python 3
 - PyTorch
 - Matplotlib (for visualization)
 - Docker with NVIDIA CUDA support
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 .
@@ -38,7 +38,8 @@ docker build -t mnist_clasifier .
 
 ```bash
 
- docker run --rm -it --gpus all -v ${PWD}/output:/app/output mnist_clasifier```
+ docker run --rm -it --gpus all -v ${PWD}/output:/app/output mnist_clasifier
+```
 
 
 
